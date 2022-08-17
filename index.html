@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .internal{
+            color: #1b79d6;
+        }
+        </style>
+</head>
+<body>
+    <h2>Difference between flex row and column?</h2>
+    <p>flex row:The flexbox items are ordered the same way as the text direction, along the main axis.</p>
+    <p>flex column:The flexbox items are ordered the same way as the text direction, along the cross axis.</p>
+    <div class="main">
+        <div class="gfg">Home</div>
+        <div class="gfg">Read</div>
+        <div class="gfg">Write</div>
+        <div class="gfg">About Us</div>
+        <div class="gfg">Contact Us</div>
+        <div class="gfg">Privacy Policy</div>
+        <div class="gfg">policy</div>
+    </div>
+    <h2>Explain inline , internal and external stylesheet</h2>
+    <p>Inline : <span style="color: #FF7A59">inline CSS</span> contains the CSS property in the body section attached with element is known as inline CSS. This kind of style is specified within an HTML tag using the style attribute. </p>
+    <p class="internal">Internal : This can be used when a single HTML document must be styled uniquely. The CSS rule set should be within the HTML file in the head section.</p>
+    <p>External: External CSS contains separate CSS file which contains only style property with the help of tag attributes (For example class, id, heading, … etc). CSS property written in a separate file.</p>
+    <h2>Justify-content allows you to do what?</h2>
+    <p>The CSS justify-content property defines how the browser distributes space between and around content items along the main-axis of a flex container, and the inline axis of a grid container.</p>
+    <p>The "justify-content: center;" aligns the flex items at the center of the container:</p>
+
+        <div id="main">
+            <div style="background-color:coral;">1</div>
+            <div style="background-color:lightblue;">2</div>
+            <div style="background-color:pink;">3</div>
+        </div>
+    
+    <h2>Difference between absolute and relative positioning</h2>
+    <p>Absolute Position:An absolute position element is positioned relative to the first parent element that has a position other than static.</p>
+    <p>Relative Position: A relative positioned element is positioned relative to its normal position.To position an element relatively, the property position is set as relative. </p>
+    <div class="relative">This div element has position: relative;
+        <div class="absolute">This div element has position: absolute;</div>
+      </div>
+    <h2>What is grid-template-columns used for?</h2>
+    <p>The grid-template-columns property specifies the number (and the widths) of columns in a grid layout. The values are a space separated list, where each value specifies the size of the respective column.</p>
+    <div class="grid-container">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>  
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+        <div class="item6">6</div>
+        <div class="item7">7</div>
+        <div class="item8">8</div>
+      </div>
+    <h2>What is the z-index in CSS?</h2>
+    <p>z-index is a CSS property that defines the order of overlapping HTML elements. Elements with a higher index will be placed on top of elements with a lower index.</p>
+    <h1>This is a z-index</h1>
+
+     <img id="img1" src="images.png" width="100" height="180">
+      <br><br><br>
+    <h2>What is the difference between padding and margin?</h2>
+    <p>A margin is the space around an element's border, while padding is the space between an element's border and the element's content.</p>
+    <div class="padding">This div element has a top padding of 50px, a right padding of 30px, a bottom padding of 50px, and a left padding of 80px.</div>
+    <div class="margin">This div element has a top margin of 100px, a right margin of 150px, a bottom margin of 100px, and a left margin of 80px.</div>
+    <h2>What is box sizing?</h2>
+    <p>The box-sizing property allows us to include the padding and border in an element's total width and height.</p>
+    <div class="div1">This div is smaller (width is 300px and height is 100px).</div>
+<br>
+<div class="div2">This div is bigger (width is also 300px and height is 100px).</div>
+    <h2>What is animation delay?</h2>
+    <p>The animation-delay CSS property specifies the amount of time to wait from applying the animation to an element before beginning to perform the animation. </p>
+    <p>Start the animation after 2 seconds:</p>
+<div class="animation"></div>
+
+    <h2>Which property you will use to merge cells vertically in grid?</h2>
+    <p>The grid-column-start property defines on which column-line the item will start.</p>
+    <p>The grid-column-end property defines how many columns an item will span, or on which column-line the item will end </p>
+    <div class="grid-container">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>  
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+        <div class="item6">6</div>
+      </div>
+    <h2>Which property you will use to merge cells horizontally in grid?</h2>
+    <p>The grid-row-start property defines on which row-line the item will start.</p>
+    <p>The grid-row-end property defines how many rows an item will span, or on which row-line the item will end</p>
+    <h2>Explain CSS box model</h2>
+    <img src="box model.png" alt="box model"><br>
+    <p>Content - The content of the box, where text and images appear</p>
+    <p>Padding - Clears an area around the content. The padding is transparent</p>
+    <p>Border - A border that goes around the padding and content</p>
+    <p>Margin - Clears an area outside the border. The margin is transparent</p>
+    <h1>what is the difference between display none and visibility hidden?</h1>
+    <p><b>visibility:hidden- It is not visible but gets up it’s original space.</b></p>
+    <h1 class="h2">This is a visible heading</h1>
+<br><br>
+<p>Notice that the hidden heading still takes up space.</p>
+
+    <p><b>display:none- It is hidden and takes no space.</b></p>
+    <h1 class="h1">This is a visible heading</h1>
+<h1 class="hidden">This is a hidden heading</h1>
+<p>Notice that the h1 element with display: none; does not take up any space.</p>
+</body>
+</html>
